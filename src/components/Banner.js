@@ -47,9 +47,7 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="m-8 max-auto lg:mx-0 "
             >
-              dfje fjeiajf ejf aiejf jefij a ifeja fm fie jff aejfi. iejfef mdf
-              iejf feifjae ff eifjeaf e fmfehfeaif.dfjae f eajf ef ejfiea ff
-              ejfi f.
+             
             </motion.p>
             <motion.div variants={fadeIn("up", 0.6)}
               initial="hidden"
