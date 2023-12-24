@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+  scroll-behavior: smooth;
+}
+.btn {
+  /* background: linear-gradient(
+    92.23deg,
+    #ff56f6 21.43%,
+    #b936ee 50.63%,
+    #3bace2 100%,
+    #406aff 117.04%
+  ); */
+  background-color: rgba(255, 166, 0, 0.868);
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  /* background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  ); */
+  background-color: rgb(162, 0, 255);
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 166, 0, 0.502);
+  transform: scale(1.02);
+}
+
+.gradient,
+.active {
+  /* background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    #b936ee 100%,
+    #ff56f6 117.04%
+  ); */
+  color:white;
+  border:2px solid #fff;
+  
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+.logoimg{
+  height: 400px;
+  width: 400px;
+  border-radius:70% 30% 47% 53% / 33% 36% 64% 67%  ;
+    /* border:2px solid blue; */
+    /* box-shadow: 0 0px 12px 2px orange; */
+    cursor: pointer;
+    transition: border-radius 300ms ease-in-out;
+    background-color: rgb(149, 0, 149);
+}
+.logoimg:hover {
+  border-radius : 26% 74% 28% 72% / 63% 59% 41% 37% ;
+}
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white scroll-smooth;
+  }
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase;
+  }
+  .h3 {
+    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px];
+  }
+  .btn {
+    @apply rounded-full font-primary text-white font-medium;
+  }
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm transition-all ease-in-out;
+  }
+  .btn-lg {
+    @apply h-[56px] px-10 text-base;
+  }
+  .btn-link {
+    @apply text-base;
+  }
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#FF56F6] font-bold font-primary hover:from-[#FF56F6] hover:to-[#42A6E3];
+  }
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 7px; /* Width of the scrollbar */
+}
+
+/* Define the styles for the scrollbar handle or thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #3498db; /* Color of the scrollbar thumb */
+  /* border-radius: 3px; Border radius of the thumb */
+}
+
+/* Define the styles for the scrollbar track on hover */
+::-webkit-scrollbar-track {
+  background-color: #203f54; /* Color of the track on hover */
+}
+
+/* Define the styles for the scrollbar handle or thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2980b9; /* Color of the thumb on hover */
+}
