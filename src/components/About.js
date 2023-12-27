@@ -29,7 +29,7 @@ const About = () => {
             <h2 className="h2 text-accent ">About me</h2>
             <h3 className="h3 mb-4">I'm a Web-Developer and a student.</h3>
             <p className="mb-6">
-              Hi , I am Danish . I am from Kashmir and I am currently studying in M.S. Ramaiah Institue of Technology. I did my finished my secondary school in 2020 and got  99.2 % in exams. Currently staying in Bengaluru and wish to become a better Web Developer. . . . . . 
+              Hi , I am Danish . I am from Kashmir and I am currently studying in M.S. Ramaiah Institue of Technology. I  finished my secondary school in 2020 and got  99.2 % in exams. Currently staying in Bengaluru and wish to become a better Web Developer. . . . . . 
             </p>
             <div className="flex gap-x-6 lg:gap-x-10 mb-12">
               <div>
