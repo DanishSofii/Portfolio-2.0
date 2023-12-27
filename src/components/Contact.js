@@ -24,10 +24,10 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row">
           {/* text */}
           <motion.div
-            variants={fadeIn('right',0.4)}
+            variants={fadeIn('right',0.1)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{once:false,amount:0.3}}
+            viewport={{once:false,amount:0.1}}
           className="flex-1 flex justify-start items-center">
             <div>
               <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wide">
@@ -40,10 +40,10 @@ const Contact = () => {
           </motion.div>
           {/* form */}
           <motion.form ref={form} onSubmit={sendEmail}
-            variants={fadeIn('left',0.3)}
+            variants={fadeIn('left',0.1)}
             initial='hidden'
             whileInView={'show'}
-            viewport={{once:false,amount:0.3}}
+            viewport={{once:false,amount:0.1}}
           className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start">
             <input
               className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"

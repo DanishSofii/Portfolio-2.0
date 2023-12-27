@@ -8,24 +8,31 @@ import { FaGithub } from "react-icons/fa";
 
 const Work = () => {
   return (
-    <section className="section" id="work">
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-x-10">
+    <section className="section mb-7 " id="work">
+      <div className="container mx-auto md:flex md:justify-center">
+        <div className="flex flex-col lg:flex-row gap-x-10 ">
           <motion.div
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn("right", 0.1)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-12 lg:mb-0"
+            viewport={{ once: false, amount: 0.1 }}
+            className="flex-1 mb-8 flex flex-col gap-y-12 lg:mb-0"
           >
             {/* text */}
 
             <h2 className="h2 leading-tight text-accent">
               My latest <br /> work:{" "}
             </h2>
-            <p className="max-w-sm mb-16">Library ManageMent System</p>
-            <button className="btn btn-sm mb-2 w-3/6"><a href="https://github.com/DanishSofii?tab=repositories" target="_blank">View All Projects</a></button>
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+            <p className="max-w-sm mb-10">Library ManageMent System</p>
+            <button className="btn btn-sm mb-5 w-3/6">
+              <a
+                href="https://github.com/DanishSofii?tab=repositories"
+                target="_blank"
+              >
+                View All Projects
+              </a>
+            </button>
+            <div className="w-[20rem] md:w-[30rem] lg:w-full group relative overflow-hidden border-2 border-white/50 rounded-xl mb-2">
               {/* image */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               <img
@@ -54,17 +61,17 @@ const Work = () => {
             </div>
           </motion.div>
           <motion.div
-            variants={fadeIn("left", 0.2)}
+            variants={fadeIn("up", 0.1)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
-            className="flex-1  flex flex-col gap-y-20 "
+            viewport={{ once: false, amount: 0.1 }}
+            className="flex-1  flex flex-col gap-y-14 "
           >
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+            <div className="w-[20rem] md:w-[30rem] lg:w-full group relative overflow-hidden border-2 border-white/50 rounded-xl mt-3">
               {/* image */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               <img
-                className="group-hover:scale-125 transition-all duration-500"
+                className=" group-hover:scale-125 transition-all duration-500"
                 src={Img2}
                 alt=""
               />
@@ -85,7 +92,7 @@ const Work = () => {
                 </span>
               </div>
             </div>
-            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+            <div className="w-[20rem] md:w-[30rem] lg:w-full group relative overflow-hidden border-2 border-white/50 rounded-xl">
               {/* image */}
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               <img

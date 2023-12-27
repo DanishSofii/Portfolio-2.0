@@ -10,21 +10,21 @@ const About = () => {
   // });
   return (
     <section className="section" id="about" r>
-      <div className="container mx-auto">
+      <div className="container ">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           <motion.div 
-          variants={fadeIn('right',0.3)}
+          variants={fadeIn('right',0.1)}
           initial="hidden"
           whileInView={"show"} 
-          viewport={{once:false, amount:0.3}}
+          viewport={{once:false, amount:0.1}}
           className="flex-1 bg-about  bg-contain bg-no-repeat h-[440px] mix-blend-lighten bg-top bg-">
             
           </motion.div>
           <motion.div
-          variants={fadeIn('left',0.5)}
+          variants={fadeIn('left',0.1)}
           initial="hidden"
           whileInView={"show"} 
-          viewport={{once:false, amount:0.3}}
+          viewport={{once:false, amount:0.1}}
           className="flex-1 ">
             <h2 className="h2 text-accent ">About me</h2>
             <h3 className="h3 mb-4">I'm a Web-Developer and a student.</h3>

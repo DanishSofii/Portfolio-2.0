@@ -62,6 +62,13 @@ html{
 .logoimg:hover {
   border-radius : 26% 74% 28% 72% / 63% 59% 41% 37% ;
 }
+.gradient-border {
+  border: 1px solid transparent;
+  /* background-clip: padding-box; */
+  border-image: linear-gradient(to right, #4a90e2, #cc2b5e); /* Adjust colors as needed */
+  border-image-slice: 1;
+  /* border-radius: 10px; */
+}
 @layer base {
   body {
     @apply font-secondary text-lg leading-8 text-white scroll-smooth;
